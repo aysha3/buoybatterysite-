@@ -8,9 +8,9 @@ function BuoyInfoPage() {
             <div id="WhatIs">
                 <HeaderParagraphImgCombo inputJson={BuoyBattParaImg1Info}></HeaderParagraphImgCombo>
             </div>
-            <div id="implementation">
+           {/* <div id="implementation">
                 <HeaderParagraphImgCombo inputJson={BuoyBattParaImg2Info}></HeaderParagraphImgCombo>
-            </div>
+            </div> */}
         </div>
         
     )
