@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import BuoyInfoPage from './Pages/BuoyInfoPage';
 import AboutUsPage from './Pages/AboutUsPage';
 import MainNavigationBar from './Components/MainNavigationBar';
@@ -7,18 +7,6 @@ import './App.css';
 
 
 function App() {
-
-  const router = createBrowserRouter([
-    {
-      path: "/buoyInfo",
-      element: <BuoyInfoPage></BuoyInfoPage>
-    },
-    {
-      path: "/",
-      element: <AboutUsPage></AboutUsPage>
-    }
-  ]);
-
   
   return (
     <div className="App">
@@ -26,7 +14,10 @@ function App() {
         <MainNavigationBar></MainNavigationBar>
       </header>
 
-      <RouterProvider router={router}></RouterProvider>
+      <Routes>
+        <Route path="/buoyInfo" element={<BuoyInfoPage></BuoyInfoPage>}></Route>
+        <Route path="/" element={<AboutUsPage></AboutUsPage>}></Route>
+      </Routes>
     </div>
   );
 }
