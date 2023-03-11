@@ -11,10 +11,10 @@ function MainNavigationBar() {
         onChange={(event, newValue) => {
          setValue(newValue);
         }}>
-            <BottomNavigationAction label="Home" onClick={()=>navigate("/buoyInfo")}></BottomNavigationAction>
+            <BottomNavigationAction label="Home" onClick={()=>navigate("/")}></BottomNavigationAction>
             <BottomNavigationAction label="Bouyancy Battery" onClick={()=>navigate("/buoyInfo")}></BottomNavigationAction>
-            <BottomNavigationAction label="Idea"></BottomNavigationAction>
-            <BottomNavigationAction label="About Us" onClick={()=>navigate("/")}></BottomNavigationAction>
+            <BottomNavigationAction label="Idea" onClick={()=>navigate("/idea")}></BottomNavigationAction>
+            <BottomNavigationAction label="About Us" onClick={()=>navigate("/aboutus")}></BottomNavigationAction>
         </BottomNavigation>
     )
 }

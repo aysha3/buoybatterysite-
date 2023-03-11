@@ -1,13 +1,54 @@
 import testImg from "../Images/squareTest.png"
 
-function HeaderParagraphImgCombo() {
+
+function HeaderParagraphImgCombo({inputJson}) {
+
+    const mainStyle= {
+        margin: "1em"
+    };
+
+    const sectionStyle= {
+        margin: "5em 0em",
+        display: "flex"
+    };
+
     return(
-        <div id="main">
-            <div id="Text" align="left" width="60em">
-                <h1>What is a Buoyancy Battery?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <img className="friendsImg" src={testImg}></img>
+        <div id="main" style={mainStyle}>
+        {
+            inputJson.map( info => {
+                const textStyle = {
+                    width: info.textWidth,
+                    margin: '1em'
+                };
+                const imgStyle = {
+                    width: info.imgSize,
+                    height: info.imgSize,
+                    margin: '1em'
+                };
+                if (info.istextLeft == true) {
+                    return(
+                        <div className="section" style={sectionStyle}>
+                            <div id="text" align={info.alignText} style={textStyle} >
+                                <h1>{info.header}</h1>
+                                <p>{info.paragraph}</p>
+                            </div>
+                            <img src={testImg} style={imgStyle}></img>
+                        </div>
+                    )
+                } else {
+                    return(
+                        <div className="section" style={sectionStyle}>
+                            <img src={testImg} style={imgStyle}></img>
+                            <div id="text" align={info.alignText} style={textStyle}>
+                                <h1>{info.header}</h1>
+                                <p>{info.paragraph}</p>
+                            </div>
+                        </div>
+                    )
+                }
+                
+            })
+        }   
         </div>
         
     )
