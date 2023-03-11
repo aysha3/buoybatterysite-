@@ -38,7 +38,7 @@ function HeaderParagraphImgCombo({inputJson}) {
                 } else {
                     return(
                         <div className="section" style={sectionStyle}>
-                            <img src={testImg} style={imgStyle}></img>
+                            <img src={require(`../Images/${info.imgSrc}`)} style={imgStyle}></img>
                             <div id="text" align={info.alignText} style={textStyle}>
                                 <h1>{info.header}</h1>
                                 <p>{info.paragraph}</p>
