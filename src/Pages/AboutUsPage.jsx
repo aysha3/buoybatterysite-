@@ -1,13 +1,28 @@
 import testImg from "../Images/squareTest.png"
+import AboutUsJson from "../JSONS/AboutUs.json"
+import HeaderParagraphImgCombo from "../Components/HeaderParagraphImgCombo"
+
+let counter = 0;
 
 function AboutUsPage() {
-    return (
-        <div>
-            <h1>About Us</h1>
-            <img src={testImg}></img>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    const sectionStyle= {
+        width: "100%",
+        display: "flex"
+    };
+
+    const profileStyle= {
+        width: "45%"
+    };
+
+    return(
+        <div id="imgSection" style={sectionStyle}>
+            <div id="profile" style={profileStyle}>
+                <HeaderParagraphImgCombo inputJson={AboutUsJson}></HeaderParagraphImgCombo>
+            </div>
         </div>
-        
     )
 }
+
+
 export default AboutUsPage

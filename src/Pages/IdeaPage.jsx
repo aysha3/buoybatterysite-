@@ -15,7 +15,6 @@ function IdeaPage() {
                         )
                     })
                 }
-                
             </div>
         </div>
         
