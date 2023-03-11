@@ -1,6 +1,7 @@
 import ReasonforSolnJson from "../JSONS/ReasonforSoln.json"
 
 function IdeaPage() {
+    let Logo = require('../Images/ImplementatationTime.png');
     return(
         <div id="mainMenu">
             <div id="solution">
@@ -15,6 +16,7 @@ function IdeaPage() {
                         )
                     })
                 }
+                <img src={Logo} alt="TimeLine" />
             </div>
         </div>
         
