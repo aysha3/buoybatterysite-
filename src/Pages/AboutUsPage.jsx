@@ -1,4 +1,3 @@
-import testImg from "../Images/squareTest.png"
 import AboutUsJson from "../JSONS/AboutUs.json"
 import HeaderParagraphImgCombo from "../Components/HeaderParagraphImgCombo"
 import "../Styles/AboutUs.css";

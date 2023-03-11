@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import { Route, Routes } from 'react-router-dom';
 import WhyUsPage from './Pages/WhyUsPage';
 import BuoyInfoPage from './Pages/BuoyInfoPage';
+import OurMissionPage from './Pages/OurMissionPage';
 import IdeaPage from './Pages/IdeaPage';
 import AboutUsPage from './Pages/AboutUsPage';
 import MainNavigationBar from './Components/MainNavigationBar';
@@ -27,7 +28,7 @@ function App() {
           <IdeaPage></IdeaPage>
           }></Route>
         <Route path="/mission" element={
-          <IdeaPage></IdeaPage>
+          <OurMissionPage></OurMissionPage>
           }></Route>
         <Route path="/aboutus" element={<AboutUsPage></AboutUsPage>}></Route>
       </Routes>

@@ -2,7 +2,7 @@ import HeaderParagraphImgCombo from "../Components/HeaderParagraphImgCombo"
 import WhyUsJson from "../JSONS/WhyUs.json"
 import WhyUsMoreJson from "../JSONS/WhyUsMoreDetail.json"
 
-function HomePage() {
+function WhyUsPage() {
     
     return(
         <div id="mainMenu">
@@ -22,4 +22,4 @@ function HomePage() {
         
     )
 }
-export default HomePage
+export default WhyUsPage

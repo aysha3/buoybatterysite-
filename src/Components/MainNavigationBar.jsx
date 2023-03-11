@@ -15,7 +15,7 @@ function MainNavigationBar() {
         onChange={(event, newValue) => {
          setValue(newValue);
         }}>
-            <BottomNavigationAction style={{color: "#14496F"}} icon={<img height="200px" width="200px"src="../Images/logo.png"/>}></BottomNavigationAction>
+            <BottomNavigationAction style={{color: "#14496F"}} icon={<img height="75px" width="75px"src={require("../Images/logo.png")}/>}></BottomNavigationAction>
             <BottomNavigationAction style={{color: "#14496F"}} label="Buoyancy Battery" onClick={()=>navigate("/")}></BottomNavigationAction>
             <BottomNavigationAction style={{color: "#14496F"}} label="Why Choose Us" onClick={()=>navigate("/whyus")}></BottomNavigationAction>
             <BottomNavigationAction style={{color: "#14496F"}} label="Timeline" onClick={()=>navigate("/timeline")}></BottomNavigationAction>

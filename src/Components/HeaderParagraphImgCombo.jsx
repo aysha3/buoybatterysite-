@@ -32,7 +32,7 @@ function HeaderParagraphImgCombo({inputJson}) {
                                 <h1>{info.header}</h1>
                                 <p>{info.paragraph}</p>
                             </div>
-                            <img src={testImg} style={imgStyle}></img>
+                            <img src={require(`../Images/${info.imgSrc}`)} style={imgStyle}></img>
                         </div>
                     )
                 } else {
