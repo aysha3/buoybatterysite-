@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import { Route, Routes } from 'react-router-dom';
-import HomePage from './Pages/HomePage';
+import WhyUsPage from './Pages/WhyUsPage';
 import BuoyInfoPage from './Pages/BuoyInfoPage';
 import IdeaPage from './Pages/IdeaPage';
 import AboutUsPage from './Pages/AboutUsPage';
@@ -17,13 +17,16 @@ function App() {
       </header>
 
       <Routes>
-      <Route path="/" element={
-          <HomePage></HomePage>
-          }></Route>
-        <Route path="/buoyInfo" element={
+        <Route path="/" element={
           <BuoyInfoPage></BuoyInfoPage>
           }></Route>
-        <Route path="/idea" element={
+        <Route path="/whyus" element={
+          <WhyUsPage></WhyUsPage>
+          }></Route>
+        <Route path="/timeline" element={
+          <IdeaPage></IdeaPage>
+          }></Route>
+        <Route path="/mission" element={
           <IdeaPage></IdeaPage>
           }></Route>
         <Route path="/aboutus" element={<AboutUsPage></AboutUsPage>}></Route>
