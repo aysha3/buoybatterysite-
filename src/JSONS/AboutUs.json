@@ -42,6 +42,28 @@
         "imgSrc": "JasonFernandes.png",
         "imgSize": "40%",
         "istextLeft": false
+    },
+    {
+        "id": 4,
+        "type": "oneParagraphOneImage",
+        "header": "Damith Tennakoon",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "alignText": "left",
+        "textWidth": "60%",
+        "imgSrc": "DamithTennakoon.png",
+        "imgSize": "40%",
+        "istextLeft": true
+    },
+    {
+        "id": 5,
+        "type": "oneParagraphOneImage",
+        "header": "Simon Aristizabal",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "alignText": "right",
+        "textWidth": "60%",
+        "imgSrc": "SimonAristizabal.png",
+        "imgSize": "40%",
+        "istextLeft": false
     }
 
 ]

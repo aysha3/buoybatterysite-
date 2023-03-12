@@ -11,11 +11,10 @@ function AboutUsPage() {
     };
 
     const profileStyle= {
-        width: "45%"
     };
 
     return(
-        <div id="imgSection" style={sectionStyle}>
+        <div class="imgSection" style={sectionStyle}>
             <div id="profileSection" style={profileStyle}>
                 <HeaderParagraphImgCombo class="profile" inputJson={AboutUsJson}></HeaderParagraphImgCombo>
             </div>
