@@ -1,5 +1,5 @@
 import AboutUsJson from "../JSONS/AboutUs.json"
-import HeaderParagraphImgCombo from "../Components/HeaderParagraphImgCombo"
+import TwoHeadersParagraphImgCombo from "../Components/TwoHeadersParagraphImgCombo"
 import "../Styles/AboutUs.css";
 
 let counter = 0;
@@ -16,7 +16,7 @@ function AboutUsPage() {
     return(
         <div class="imgSection" style={sectionStyle}>
             <div id="profileSection" style={profileStyle}>
-                <HeaderParagraphImgCombo class="profile" inputJson={AboutUsJson}></HeaderParagraphImgCombo>
+                <TwoHeadersParagraphImgCombo class="profile" inputJson={AboutUsJson}></TwoHeadersParagraphImgCombo>
             </div>
         </div>
     )
